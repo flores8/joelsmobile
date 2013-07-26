@@ -1,0 +1,61 @@
+@import 'variables.css.scss';
+
+/* Navigation
+================================================== */
+div.contain-to-grid {
+	background: $white;
+}
+
+/* logo */
+a#logo img {
+	margin: 1.5em 0 2em 0;
+	float: left;
+}
+
+/* navigation */
+ul.right {
+	background: $white;
+	list-style-type: none;
+	margin: 0;
+	li {
+		margin-right: 1em;
+	}
+}
+
+.top-bar-section li a:not(.button), .top-bar-section ul li.active > a {
+	background: $white;
+	padding-top: 1.5em;
+	&:hover {
+		color: $green;
+		border-top: .3em solid $green;
+	}
+}
+.top-bar-section li a:not(.button) {
+	padding-top: 1.8em;
+	&:hover {
+		padding-top: 1.5em;
+	}
+}
+
+.top-bar-section ul li.active > a {
+	border-top: .3em solid $green;
+}
+
+/* Get Started Button */
+.top-bar-section li a:not(.button).get-started-button {
+	color: $white;
+	@include button($green, $white, .1em 1em);
+	font-weight: normal;
+	margin-top: 1.5em;
+	&:hover {
+		background-color: darken($green, 5%);
+	}
+}			
+
+
+/* Phone Number */
+li.phone-number {
+	color: $blue;
+	font-size: 1.1em;
+	padding-top: 2em;
+}

@@ -1,0 +1,44 @@
+/* Colors
+================================================== */
+$blue: 									#0079c2 !default;
+$darkBlue: 							#015f98 !default;
+$green:                 #63aa9c !default;
+$red:                   #f16c32 !default;
+$white:                 #fafafa !default;
+$grayLight:							#f0f0f0 !default;
+$grayLightStroke:				#9ea7b3 !default;
+$textInactive: 					#afb0b0 !default;
+$textDark: 							#323a45 !default;
+$textDarkBlue:  				#5e6d81 !default;
+
+
+/* Mixins, Variables, etc.
+================================================== */
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+// Drop shadows
+@mixin box-shadow($shadow...) { 
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+
+// Button
+@mixin button ($bg_color, $color, $padding) {
+	background-color: ($bg_color);
+	border: none;
+	color: $color;
+	padding: ($padding);
+	@include border-radius(2px);
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
