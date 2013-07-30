@@ -1,4 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 @import 'variables.css.scss';
+
 //
 // Foundation Variables
 //
@@ -51,10 +54,9 @@ $em-base: 16 !default;
 // Various global styles
 
 $default-float: left;
-
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'PT Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -1302,3 +1304,10 @@ $topbar-menu-link-color: $green;
 // $topbar-sticky-class: ".sticky";
 @import 'home.css.scss';
 @import 'foundation';
+@media #{$small} { 
+  
+}
+body {
+  margin-top: 8em;
+  background-color: #fafafa;
+}

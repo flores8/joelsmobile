@@ -18,7 +18,7 @@ ul.right {
 	list-style-type: none;
 	margin: 0;
 	li {
-		margin-right: 1em;
+		margin-left: 1em;
 	}
 }
 
@@ -31,7 +31,7 @@ ul.right {
 	}
 }
 .top-bar-section li a:not(.button) {
-	padding-top: 1.8em;
+	padding-top: 1.75em;
 	&:hover {
 		padding-top: 1.5em;
 	}
@@ -58,4 +58,127 @@ li.phone-number {
 	color: $blue;
 	font-size: 1.1em;
 	padding-top: 2em;
+}
+
+@media only screen and (max-width: 939px) { 
+	/* Center Logo */
+	div.logo {
+		width: emCalc(143);
+		margin: 1em auto;
+		.img {
+			max-width: 100%;
+		}
+	}
+
+	/* Collapsed Navigation Styling */
+	ul.right {
+		border-top: 3px solid $green;
+		border-bottom: 3px solid $green;
+		li {
+			text-align: center;
+			margin: 0;
+		}
+	}
+	.top-bar-section li a:not(.button), .top-bar-section ul li.active > a, .top-bar-section li a:not(.button).get-started-button {
+	background: $white;
+	color: $textInactive;
+	border: none;
+	padding: 1.5em 0 1.5em 0;
+	margin: 0;
+	&:hover {
+		color: $white;
+		background-color: $green;
+		border: none;
+		}
+	}
+	.top-bar-section ul li.active > a, .top-bar-section ul li.active a:not(.button).get-started-button {
+		background-color: $green;
+		color: $white;
+	}
+	li.phone-number {
+		color: $blue;
+		font-size: 1.1em;
+		padding: 1.5em 0;
+	}
+}
+
+/* Home Page
+================================================== */
+
+/* Home Page Intro */
+h1.home-header {
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: emCalc(48);
+	margin: 2em 0 .3em 0;
+	text-align: center;
+	color: $blue;
+	font-weight: normal;
+}
+
+h2.home-subtitle {
+	font-weight: 300;
+	font-size: emCalc(20);
+	line-height: emCalc(28);
+	text-align: center;
+	color: $textLight;
+	margin-bottom: 4em;
+}
+
+a.big-button {
+	@include button($green, $white, .5em 2em);
+	font-size: emCalc(30);
+	font-weight: 100;
+	&:hover {
+		background-color: darken($green, 5%);
+	}
+}
+
+div.home-call {
+	text-align: center;
+	margin: 1em 0 8em 0;
+}
+
+
+/* Video Section */
+div.video {
+	background-color: $gray;
+}
+
+img.home-video {
+	margin: 5em auto;
+}
+
+
+/* Services Section */
+h3.section-heading {
+	text-transform: uppercase;
+	color: $textDarkBlue;
+	font-size: emCalc(24);
+	text-align: center;
+	margin: 5em 0 .5em 0;
+}
+
+h4.section-subheading {
+	color: $textDarkBlue;
+	font-size: emCalc(18);
+	text-align: center;
+	font-weight: 300;
+}
+
+div.empty-button {
+	text-align: center;
+	margin: 5em 0;
+}
+
+a.empty-button {
+	border: 2px solid $darkGray;
+	padding: .75em 3em;
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: emCalc(30); 
+	color: $textDark;
+	@include border-radius(2px);
+	&:hover {
+		background-color: $green;
+		color: $white;
+	}
 }

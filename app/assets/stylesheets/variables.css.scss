@@ -5,11 +5,17 @@ $darkBlue: 							#015f98 !default;
 $green:                 #63aa9c !default;
 $red:                   #f16c32 !default;
 $white:                 #fafafa !default;
+$gray:                  #e0e0e0 !default;
+$darkGray:              #b3b2b2 !default;
 $grayLight:							#f0f0f0 !default;
 $grayLightStroke:				#9ea7b3 !default;
 $textInactive: 					#afb0b0 !default;
 $textDark: 							#323a45 !default;
 $textDarkBlue:  				#5e6d81 !default;
+$textLight:             #898989 !default;
+
+::-moz-selection { color: $white;  background: $blue; }
+::selection      { color: $white;  background: $blue; } 
 
 
 /* Mixins, Variables, etc.
@@ -42,3 +48,14 @@ $textDarkBlue:  				#5e6d81 !default;
 		color: $white;
 	}
 }
+
+$small-screen: emCalc(768);
+$medium-screen: emCalc(1280);
+$large-screen: emCalc(1440);
+
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";

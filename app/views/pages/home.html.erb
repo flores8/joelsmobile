@@ -1,2 +1,37 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row">
+	<h1 class="home-header">Auto Detailing and Power Washing</h1>
+	<div class="small-10 small-centered columns">
+		<h2 class="home-subtitle">With more than 18 years in business and a dedication to quality service, you will love what you see when we visit!</h2>
+	</div>
+
+	<div class="large-5 small-centered columns">
+		<div class="home-call">
+			<%= link_to "Get Started", contact_path, class: "big-button" %>
+		</div>
+	</div>
+</div>
+
+<div class="video">
+	<div class="row">
+		<div class="large-8 small-centered columns">
+			<%= image_tag("video.png", class: 'home-video') %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<h3 class="section-heading">Services</h3>
+	<h4 class="section-subheading">We don't leave any dirt behind.</h4>
+
+	<div class="large-6 columns">
+		<div class="empty-button">
+			<%= link_to "Auto Detailing", auto_path, class: "empty-button" %>
+		</div>
+		
+	</div>
+	<div class="large-6 columns">
+		<div class="empty-button">
+			<%= link_to "Power Washing", auto_path, class: "empty-button" %>
+		</div>
+	</div>
+</div>

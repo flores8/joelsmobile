@@ -1,6 +1,9 @@
 <div class="contain-to-grid fixed">
   <div class="row">
-    <%= link_to image_tag("logo.png"), root_path, id: "logo" %>
+    <div class="logo">
+      <%= link_to image_tag("logo.png"), root_path, id: "logo" %>
+    </div>
+    
 
     <section class="top-bar-section">
       <ul class="right">
@@ -16,7 +19,7 @@
         <li class="<%= 'active' if current_page?(about_path) %>">
           <%= link_to "About", about_path %>
         </li>
-        <li id="get-started">
+        <li class="<%= 'active' if current_page?(contact_path) %>" id="get-started">
           <%= link_to "Get Started", contact_path, class: "get-started-button" %>
         </li>
         <li class="phone-number">(520)744-5635</li>
