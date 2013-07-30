@@ -1,3 +1,4 @@
+<!-- Home Page Intro --> 
 <div class="row">
 	<h1 class="home-header">Auto Detailing and Power Washing</h1>
 	<div class="small-10 small-centered columns">
@@ -11,6 +12,7 @@
 	</div>
 </div>
 
+<!-- Video Section --> 
 <div class="gray">
 	<div class="row">
 		<div class="large-8 small-centered columns">
@@ -19,6 +21,7 @@
 	</div>
 </div>
 
+<!-- Services Section --> 
 <div class="row">
 	<h3 class="section-heading">Services</h3>
 	<h4 class="section-subheading">We don't leave any dirt behind.</h4>
@@ -44,8 +47,26 @@
 	</div>
 </div>
 
+<!-- Get Started Section --> 
 <div class="gray">
 	<div class="get-started">
 		<%= link_to "Get Started", contact_path, class: "get-started" %>
 	</div>
+</div>
+
+
+<!-- Reviews Section --> 
+<div class="row">
+	<h3 class="section-heading">Reviews</h3>
+	<h4 class="section-subheading">See what our customers are saying.</h4>
+</div>
+
+<div class="row">
+	<%= render 'review' %>
+	<%= render 'review' %>	
+</div>
+
+<div class="row">
+	<%= render 'review' %>
+	<%= render 'review' %>	
 </div>
