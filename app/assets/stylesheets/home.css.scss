@@ -1,5 +1,11 @@
 @import 'variables.css.scss';
 
+/* Sections - colored... 
+================================================== */
+div.gray {
+	background-color: $gray;
+}
+
 /* Navigation
 ================================================== */
 div.contain-to-grid {
@@ -140,10 +146,6 @@ div.home-call {
 
 
 /* Video Section */
-div.video {
-	background-color: $gray;
-}
-
 img.home-video {
 	margin: 5em auto;
 }
@@ -167,7 +169,7 @@ h4.section-subheading {
 
 div.empty-button {
 	text-align: center;
-	margin: 5em 0;
+	margin: 5em 0 8em 0;
 }
 
 a.empty-button {
@@ -180,5 +182,34 @@ a.empty-button {
 	&:hover {
 		background-color: $green;
 		color: $white;
+	}
+}
+
+p.home-testimonial {
+	margin: 5em 0 .5em 0;
+	color: $textDarkBlue;
+	font-size: emCalc(17);
+	font-style: italic;
+	padding: 0 4.75em;
+}
+
+p.home-testimonial-credit {
+	margin: 0 0 5em 0;
+	color: $textDarkBlue;
+	font-size: emCalc(14);
+}
+
+/* Get Started Strip */
+div.get-started {
+	text-align: center;
+	padding: 5em 0;
+}
+
+a.get-started {
+	@include button($green, $white, .75em 4em);
+	font-size: emCalc(24);
+	font-weight: 100;
+	&:hover {
+		background-color: darken($green, 5%);
 	}
 }
