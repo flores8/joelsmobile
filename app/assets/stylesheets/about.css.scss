@@ -1,0 +1,37 @@
+@import 'variables.css.scss';
+
+/* Big Image - Header Area
+================================================== */
+div.big-image {
+	margin: 2em 0;
+}
+
+
+/* Text and Small Images
+================================================== */
+h1.about {
+	text-transform: uppercase;
+	color: $textDarkBlue;
+	font-size: 1.2em;
+	font-weight: 200;
+	text-align: center;
+	margin: 2em 0;
+}
+
+p.about {
+	color: $textGray;
+	font-size: emCalc(18);
+	line-height: 2.25em;
+}
+
+div.first-paragraph {
+	margin: 4em 0 0;
+}
+
+div.second-paragraph {
+	margin: 3em 0 7em 0;
+}
+
+img.about-small-image {
+	border: 1px solid $grayLight;
+}

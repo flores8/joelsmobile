@@ -1,2 +1,45 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<!-- Big Image - Header Area --> 
+<div class="big-image">
+	<%= image_tag('big-car.jpg') %>
+</div>
+
+<!-- Text and Small Image - First Paragraph --> 
+
+<div class="row">
+	<h1 class="about">We’re a tucson Arizona, family owned and operated company</h1>
+	<div class="first-paragraph">
+		<div class="small-12 large-9 columns">
+			<p class="about">
+				Joel’s Mobile founder and owner Joel Gurvine is a true entrepreneur. As a young college student, he started his business with an old GMC pickup truck, some equipment he purchased on credit, and one very hard-working employee—himself! Today, the company has four trucks and a staff of ten that is thoroughly trained in the fine art of auto, watercraft, and plane detailing, plus numerous other services the company provides. Joel believes the rigorous training his employees receive makes them the best and most efficient detailers in Tucson.
+			</p>
+		</div>
+
+		<div class="small-12 large-3 columns">
+			<%= image_tag('joel.jpg', class: "about-small-image") %>
+		</div>
+	</div>
+</div>
+	
+
+<!-- Text and Small Image - Second Paragraph --> 
+<div class="second-paragraph">
+	<div class="row">
+		<div class="small-12 large-3 columns">
+			<%= image_tag('car.jpg', class: "about-small-image" )%>
+		</div>
+
+		<div class="small-12 large-9 columns">
+			<p class="about">
+				What’s unique about Joel’s Mobile? The convenience factor: they come to you and service your vehicle on site, wherever and whenever it’s convenient for you, be it a parking lot, a driveway, or in the middle of the desert. Joel’s crew comes prepared to work with its own water, electricity and everything they need to wash or detail a vehicle. The company is also adept at power washing concrete, buildings, storefronts, sidewalks and driveways. Joel’s Mobile, which is registered with the Better Business Bureau, has earned a solid reputation for providing customers with exceptional, reliable service.
+			</p>
+		</div>
+	</div>
+</div>
+	
+
+<!-- Give us a Call Section --> 
+<div class="gray">
+	<div class="get-started">
+		<%= link_to "Give Us a Call", contact_path, class: "get-started" %>
+	</div>
+</div>
