@@ -249,7 +249,84 @@ p.review-credit {
 }
 
 /* Reasons to Choose Joels Mobile */
+div.reason {
+	background-color: darken($green, 8%);
+	@include border-radius(2px);
+	padding: 7.8em 1.5em 2em 1.5em;
+	margin-bottom: 5em;
+	position: relative;
+	background-position: 50% 12%;
+	background-repeat: no-repeat; 
+	h4.reason, p.reason {
+		text-align: center;
+		color: $grayLight;
+	}
+	h4.reason {
+		font-weight: 200;
+		font-size: emCalc(24);
+		margin-bottom: emCalc(15);
+	}
+	p.reason {
+		font-size: emCalc(16);
+		font-weight: 100;
+	}
+}
 
+div.reason.busy {
+	background-image: url('clock.png');
+}
+
+div.reason.heart {
+	background-image: url('heart.png');
+}
+
+div.reason.trust {
+	background-image: url('trust.png');
+}
+
+
+/* Before and After */
+h3.compare {
+	text-transform: uppercase;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	font-size: emCalc(24);
+	font-weight: normal;
+	text-align: center;
+	color: $blue;
+}
+
+div.blue-box {
+	background-color: $blue;
+	height: emCalc(230);
+	width: emCalc(360);
+	text-align: center;
+}
+
+div.small-green-ball {
+	background-color: $green;
+	@include border-radius(50%);
+	width: emCalc(7);
+	height: emCalc(7);
+}
+
+div.bigger-green-ball {
+	background-color: $green;
+	@include border-radius(50%);
+	width: emCalc(10);
+	height: emCalc(10);
+}
+
+ul.compare {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 8em;
+}
+
+li.compare {
+	display: inline;
+	margin: 0 1em;
+}
 
 /* Footer - top half */
 div.footer-top {
