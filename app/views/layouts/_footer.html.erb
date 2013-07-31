@@ -1,1 +1,41 @@
-<h2>test footer</h1>
+<footer>
+	<div class="footer-top">
+		<ul class="footer">
+			<li class="footer <%= 'active' if current_page?(root_path) %>">
+				<%= link_to "Home", root_path, class: "footer" %>
+			</li>
+
+			<li class="footer <%= 'active' if current_page?(auto_path) %>">
+				<%= link_to "Auto Detailing", auto_path, class: "footer" %>
+			</li>
+
+			<li class="footer <%= 'active' if current_page?(power_path) %>">
+				<%= link_to "Power Washing", power_path, class: "footer" %>
+			</li>
+
+			<li class="footer <%= 'active' if current_page?(about_path) %>">
+				<%= link_to "About Us", about_path, class: "footer" %>
+			</li>
+
+			<li class="footer <%= 'active' if current_page?(contact_path) %>"  id="get-started">
+				<%= link_to "Get Started", contact_path, class: "footer get-started-button" %>
+			</li>
+		</ul>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="row">
+			<p class="phone">(520) 744-5635</p>
+			<ul class="social-contacts">
+				<li class="social-contacts"><%= link_to image_tag('social-google.png'), "https://plus.google.com/110845071903914857940/about" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-yahoo.png'), "http://local.yahoo.com/info-20118156-joel-s-mobile-detailing-tucson;_ylt=AloTiPMOM4HvNg1FDZHWrXSHNcIF;_ylv=3?csz=Tucson,+AZhttp://local.yahoo.com/info-20118156-joel-s-mobile-detailing-tucson;_ylt=AloTiPMOM4HvNg1FDZHWrXSHNcIF;_ylv=3?csz=Tucson,+AZ" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-yelp.png'), "http://www.yelp.com/biz/joels-mobile-detailing-and-power-washing-tucson" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-bing.png'), "http://www.bing.com/local/Details.aspx?lid=YN68x735288&q=mobile%20auto%20detailing&qt=yp&tid=91f50f1543974d3bb3a9612776346388&cobrand=1&FORM=LLSV&js=n" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-yellow.png'), "http://www.yellowpages.com/tucson-az/mip/joels-mobile-detailing-15631998/reviews?lid=151147680" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-dex.png'), "http://www.dexknows.com/business_profiles/joel_s_mobile_detailing-b628712" %></li>
+				<li class="social-contacts"><%= link_to image_tag('social-bbb.png'), "http://www.bbb.org/tucson/business-reviews/auto-detailing/joels-mobile-detailing-and-power-washing-in-tucson-az-6000153" %></li>
+			</ul>
+		</div>
+		
+	</div>
+</footer>
