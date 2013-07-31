@@ -43,3 +43,32 @@
 		<%= link_to "Give Us a Call", contact_path, class: "get-started" %>
 	</div>
 </div>
+
+<!-- Photo Gallery --> 
+<div class="row">
+	<h3 class="section-heading">Photo Gallery</h3>
+</div>
+<div class="row">
+	<ul class="clearing-thumbs" data-clearing>
+	  <li><%= link_to image_tag("car.jpg"), "#" %></li>
+	  <li><%= link_to image_tag("car.jpg"), "#" %></li>
+	  <li><%= link_to image_tag("car.jpg"), "#" %></li>
+	</ul>
+	
+</div>
+
+<!-- Reviews Section --> 
+<div class="row">
+	<h3 class="section-heading">Reviews</h3>
+	<h4 class="section-subheading">See what our customers are saying.</h4>
+</div>
+
+<div class="row">
+	<%= render 'review' %>
+	<%= render 'review' %>	
+</div>
+
+<div class="row">
+	<%= render 'review' %>
+	<%= render 'review' %>	
+</div>
