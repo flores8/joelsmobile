@@ -60,7 +60,7 @@ $textGray:              #717272 !default;
 	height: 50px;
 	color: white;
 	cursor: pointer;
-	background-image: url($image);
+	background-image: image-url($image);
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: inline-block;

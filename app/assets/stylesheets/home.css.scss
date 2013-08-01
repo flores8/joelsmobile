@@ -289,19 +289,19 @@ div.reason {
 }
 
 div.reason.busy {
-	background-image: url('clock.png');
+	background-image: image-url("clock.png");
 }
 
 div.reason.heart {
-	background-image: url('heart.png');
+	background-image: image-url("heart.png");
 }
 
 div.reason.trust {
-	background-image: url('trust.png');
+	background-image: image-url("trust.png");
 }
 
 div.reason.convenience {
-	background-image: url('convenience.png');
+	background-image: image-url("convenience.png");
 }
 
 

@@ -71,11 +71,11 @@ li.flex-active-slide {max-width: 690px;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: url("flexslider-nav.png") no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
+.flex-direction-nav a {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: image-url("flexslider-nav.png") no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -116px; }
 .flex-direction-nav .flex-prev {left: -120px;}
-.flexslider .flex-next:hover {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: url("flexslider-nav.png") no-repeat right bottom; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
-.flexslider .flex-prev:hover {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: url("flexslider-nav.png") no-repeat left bottom; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
+.flexslider .flex-next:hover {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: image-url("flexslider-nav.png") no-repeat right bottom; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
+.flexslider .flex-prev:hover {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: image-url("flexslider-nav.png") no-repeat left bottom; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
 
 /* Control Nav */
 .flex-control-nav {display: none;}
