@@ -19,8 +19,6 @@ h2.auto-subtitle {
 	margin-bottom: 4em;
 }
 
-
-
 /* Flexslider
 ================================================== */
 /*
@@ -92,7 +90,88 @@ li.flex-active-slide {max-width: 690px;}
 }
 
 
+/* Pricing Packages
+================================================== */
+div.pricing-wrapper {
+	margin: 6em 0 8em;
+}
 
+/* Popular Package */
+div.popular {
+	background-color: $green;
+	padding: .8em .5em .5em;
+	margin-bottom: 2px;
+}
 
+div.popular.false {
+	background-color: $white;
+}
 
+p.popular-package {
+	font-size: 1.125em;
+	font-weight: 100;
+	margin-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1.8px;
+	line-height: 1.125em;
+}
+
+p.popular-package.false {
+	color: $white;
+}
+
+/* Package Name and Price */
+div.package {
+	background-color: $textGray;
+	color: white;
+	padding: 1em .5em .5em;
+}
+
+p.package-name {
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: 100;
+}
+
+span.package-price {
+	font-size: 48px;
+	vertical-align: super;
+}
+
+p.package-price {
+	font-size: 6.25em;
+	color: white;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+p.price-disclaimer {
+	font-style: italic;
+	font-size: .8125em;
+	text-align: center;
+}
+
+/* Package Details */
+div.package-details {
+	background-color: $gray;
+	color: $textGray;
+	&:hover {
+		background-color: $green;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+p.package-details {
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.9em;
+	text-align: center;
+	font-weight: 100;
+	padding: .35em 0;
+	margin-bottom: 2px;
+}
 
