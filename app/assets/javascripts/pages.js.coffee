@@ -4,5 +4,5 @@
 
 $ ->
   $(".flexslider").flexslider
-    animation: "slide"
     slideshow: false
+    animation: "slide"
