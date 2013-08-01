@@ -6,6 +6,15 @@ div.gray {
 	background-color: $gray;
 }
 
+h1.gray {
+	font-size: emCalc(30);
+	color: $textGray;
+	margin: 3em 0 -.5em 0;
+	text-align: center;
+	font-weight: 200;
+
+}
+
 div.green {
 	background-color: $green;
 }
@@ -15,6 +24,7 @@ h3.green {
 	text-align: center;
 	font-weight: 200;
 	padding: 3em 0 2em 0;
+	margin-top: 0;
 }
 
 
@@ -228,6 +238,10 @@ a.get-started {
 }
 
 /* Reviews */
+div.review-wrapper {
+	margin-bottom: 6em;
+}
+
 div.review {
 	background-color: $grayLight;
 	border-left: 5px solid $red;
@@ -262,6 +276,8 @@ div.reason {
 		color: $grayLight;
 	}
 	h4.reason {
+		font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		letter-spacing: 1.5px;
 		font-weight: 200;
 		font-size: emCalc(24);
 		margin-bottom: emCalc(15);
@@ -282,6 +298,10 @@ div.reason.heart {
 
 div.reason.trust {
 	background-image: url('trust.png');
+}
+
+div.reason.convenience {
+	background-image: url('convenience.png');
 }
 
 

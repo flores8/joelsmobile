@@ -5,7 +5,7 @@
 </div>
 
 <!-- Big Slider --> 
-<div class="row">
+<div class="row slideshow">
 	<div class="small-9 small-centered columns">
 		<div class="flexslider">
 		  <ul class="slides">
@@ -24,4 +24,83 @@
 		  </ul>
 		</div><!-- Close flexslider div --> 
 	</div>
+</div>
+
+
+<!-- Reasons to Choose Joels Mobile -->
+<div class="green">
+	<h3 class="green">Reasons to Choose Joel's Mobile</h3>
+	<div class="row">
+
+		<!-- You Are Busy --> 
+		<div class="small-12 large-4 columns">
+			<div class="reason busy">
+				<h4 class="reason">You Are Busy</h4>
+				<p class="reason">We make it quick and convenient to get the highest quality professional service that doesn’t take time out of your day.</p>
+			</div><!-- End "You Are Busy" Div --> 
+		</div>
+
+		<!-- You Care --> 
+		<div class="small-12 large-4 columns">
+			<div class="reason heart">
+				<h4 class="reason">You Care About Your Car</h4>
+				<p class="reason">Cleanliness is important to you.  Look to Joel’s Mobile for the highest quality professional service for your cars, floors, decks, and much more.</p>
+			</div><!-- End "You Care" Div --> 
+		</div>
+		
+		<!-- Convenience --> 
+		<div class="small-12 large-4 columns">
+			<div class="reason convenience">
+				<h4 class="reason">Convenience</h4>
+				<p class="reason">We work our hardest to earn and keep your trust.  You can count on us to provide remarkable service that you will grow to rely on.</p>
+			</div><!-- End "Convenience" Div --> 
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-- See Joels Mobile in Action -->
+<div class="gray">
+	<div class="row">
+		<div class="large-8 small-12 small-centered columns">
+			<h1 class="gray">See Joel's Mobile in Action</h1>
+			<%= image_tag("video.png", class: 'home-video') %>
+		</div>
+	</div>
+</div>
+
+
+<!-- Reviews Section -->
+<div class="review-wrapper">
+	<div class="row">
+		<h3 class="section-heading">Reviews</h3>
+		<h4 class="section-subheading">See what our customers are saying.</h4>
+	</div>
+
+	<div class="row">
+		<%= render 'review' %>
+		<%= render 'review' %>	
+	</div>
+
+	<div class="row">
+		<%= render 'review' %>
+		<%= render 'review' %>	
+	</div>
+</div> 
+	
+
+
+<!-- Get Started Section --> 
+<div class="gray">
+	<div class="get-started">
+		<%= link_to "Find Out More", contact_path, class: "get-started" %>
+	</div>
+</div>
+
+<!-- Pricing --> 
+<div class="pricing-wrapper">
+
+	
 </div>
