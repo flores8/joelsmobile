@@ -1,0 +1,15 @@
+@import 'variables.css.scss';
+
+/* Intro Text - Header Area
+================================================== */
+h1.power-header {
+	color: $textDarkBlue;
+	font-size: 3em;
+	font-style: italic;
+	text-align: center;
+	font-weight: 200;
+	margin: 2em 0 1em 0;
+	span {
+		color: $blue;
+	}
+}
