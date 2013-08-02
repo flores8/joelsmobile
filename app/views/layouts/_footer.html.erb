@@ -14,7 +14,11 @@
 			</li>
 
 			<li class="footer <%= 'active' if current_page?(about_path) %>">
-				<%= link_to "About Us", about_path, class: "footer" %>
+				<%= link_to "About", about_path, class: "footer" %>
+			</li>
+
+			<li class="footer <%= 'active' if current_page?(learning_path) %>">
+				<%= link_to "Learning Center", learning_path, class: "footer" %>
 			</li>
 
 			<li class="footer <%= 'active' if current_page?(contact_path) %>"  id="get-started">

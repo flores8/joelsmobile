@@ -11,9 +11,6 @@ class PagesController < ApplicationController
   def about
   end
 
-  def learning
-  end
-
   def contact
   end
 end

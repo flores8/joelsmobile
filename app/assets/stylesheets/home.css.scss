@@ -47,7 +47,7 @@ ul.right {
 	list-style-type: none;
 	margin: 0;
 	li {
-		margin-left: 1em;
+		margin-left: .25em;
 	}
 }
 
@@ -85,8 +85,8 @@ ul.right {
 /* Phone Number */
 li.phone-number {
 	color: $blue;
-	font-size: 1.1em;
-	padding-top: 2em;
+	font-size: 1.05em;
+	padding: 2.2em 0 0 .2em;
 }
 
 @media only screen and (max-width: 939px) { 
@@ -372,6 +372,10 @@ a.footer {
 	&:hover {
 		color: $green;
 	}
+}
+
+li.footer.active > a {
+	color: $green;
 }
 
 a.footer.get-started-button {

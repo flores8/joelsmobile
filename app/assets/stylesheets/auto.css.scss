@@ -78,6 +78,20 @@ li.flex-active-slide {max-width: 690px;}
 .flexslider .flex-prev:hover {width: 75px; height: 75px; margin: -35px 0 0; display: block; background: image-url("flexslider-nav.png") no-repeat left bottom; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; }
 
 /* Control Nav */
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 30px; height: 10px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; @include border-radius(2px);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+
 .flex-control-nav {display: none;}
 
 
@@ -88,6 +102,22 @@ li.flex-active-slide {max-width: 690px;}
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
 }
+
+
+
+
+.flex-control-nav li a{
+	width:30px;
+	height:10px;
+	display:block;
+	cursor:pointer;
+	text-indent:-999em;
+}
+
+.flex-control-nav li a.flex-active {
+	background-color: #f8c83a;
+}
+
 
 
 /* Pricing Packages

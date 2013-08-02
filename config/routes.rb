@@ -3,8 +3,8 @@ Joelsmobile::Application.routes.draw do
   get 'auto' => "pages#auto"
   get 'power' => "pages#power"
   get 'about' => "pages#about"
-  get 'learning' => "pages#learning"
   get 'contact' => "pages#contact"
+  get 'learning' => "education#home"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
