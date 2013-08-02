@@ -206,6 +206,7 @@ a.empty-button {
 	&:hover {
 		background-color: $green;
 		color: $white;
+		border: 2px solid $green;
 	}
 }
 
