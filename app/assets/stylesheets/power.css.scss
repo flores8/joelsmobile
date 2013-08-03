@@ -18,12 +18,27 @@ h1.power-header {
 /* Commercial Hot and Cold Power Washing
 ================================================== */
 div.commercial-wrapper {
-	margin: 3em 0;
+	margin: 3em 0 0 0;
 }
+
 p.power-commercial {
 	text-transform: uppercase;
 	color: $textDarkBlue;
 	text-align: center;
 	margin: 2em 0;
 	font-size: 1.125em;
+}
+
+/* Gray strip right below three big services */
+div.commercial-additional-services {
+	margin: 3em 0;
+	padding: 1.5em 0;
+}
+p.commercial-additional-services {
+	color: $blue;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 200;
+	text-align: center;
+	margin: 1.25em 0;
 }
