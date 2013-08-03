@@ -325,18 +325,12 @@ div.blue-box {
 	text-align: center;
 }
 
-div.small-green-ball {
-	background-color: $green;
-	@include border-radius(50%);
-	width: emCalc(7);
-	height: emCalc(7);
-}
-
-div.bigger-green-ball {
-	background-color: $green;
-	@include border-radius(50%);
-	width: emCalc(10);
-	height: emCalc(10);
+div.before-after-connection {
+	background-image: image-url("connection.png");
+	color: $white;
+	background-position: 50%;
+	background-repeat: no-repeat; 
+	margin: 18em 1em 0 0;
 }
 
 ul.compare {
