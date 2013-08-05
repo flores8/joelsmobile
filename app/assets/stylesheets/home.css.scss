@@ -33,10 +33,28 @@ h3.green {
 ================================================== */
 div.contain-to-grid {
 	background: $white;
+	border-bottom: $white;
+	
 }
 
 div.contain-to-grid.header.shadow {
 	border-bottom: 1px solid $gray;
+	transition-property: border-bottom;
+	-webkit-transition-property:color border-bottom;  
+   -moz-transition-property:color border-bottom;  
+   -o-transition-property:color border-bottom;
+   transition-delay: .5s;
+	-webkit-transition-delay:color .5s;  
+   -moz-transition-delay:color .5s;  
+   -o-transition-delay:color .5s;
+	transition-duration: 1.5s;
+	-webkit-transition-duration:color 1.5s;  
+   -moz-transition-duration:color 1.5s;  
+   -o-transition-duration:color 1.5s;
+	transition-timing-function: linear;
+	-webkit-transition-timing-function:color linear;  
+   -moz-transition-timing-function:color linear;  
+   -o-transition-timing-function:color linear;
 }
 
 /* logo */
@@ -327,6 +345,7 @@ div.blue-box {
 	height: emCalc(230);
 	width: emCalc(360);
 	text-align: center;
+	margin-bottom: 4.5em;
 }
 
 div.before-after-connection {
