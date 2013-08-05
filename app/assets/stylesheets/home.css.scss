@@ -35,6 +35,10 @@ div.contain-to-grid {
 	background: $white;
 }
 
+div.contain-to-grid.header.shadow {
+	border-bottom: 1px solid $gray;
+}
+
 /* logo */
 a#logo img {
 	margin: 1.5em 0 2em 0;

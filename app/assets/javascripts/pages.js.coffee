@@ -6,3 +6,12 @@ $ ->
   $(".flexslider").flexslider
     slideshow: false
     animation: "slide"
+
+
+header = $(".header")
+
+$(window).scroll (e) ->
+  if header.offset().top isnt 0
+    header.addClass "shadow"  unless header.hasClass("shadow")
+  else
+    header.removeClass "shadow"
