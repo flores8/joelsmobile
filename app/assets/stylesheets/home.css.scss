@@ -340,12 +340,31 @@ h3.compare {
 	color: $blue;
 }
 
-div.blue-box {
-	background-color: $blue;
-	height: emCalc(230);
+div.before-after {
+	height: emCalc(228);
 	width: emCalc(360);
 	text-align: center;
 	margin-bottom: 4.5em;
+}
+
+div.before-after.before {
+	background-position: left center;
+}
+
+div.before-after.after {
+	background-position: right center;
+}
+
+div.before-after.first {
+	background-image: image-url("before-after-auto.png");
+}
+
+div.before-after.second {
+	background-image: image-url("before-after-auto-2.png");
+}
+
+div.before-after.third {
+	background-image: image-url("before-after-power.png");
 }
 
 div.before-after-connection {
@@ -426,4 +445,59 @@ ul.social-contacts {
 li.social-contacts {
 	display: inline;
 	margin: 0 1em;
+}
+
+div.social-footer {
+	width: 51px;
+	height: 51px;
+	background-image: image-url("social.png");
+}
+
+div.social-footer.google {
+	background-position: -1px 1px;
+	&:hover {
+		background-position: -1px 51px;
+	}
+}
+
+div.social-footer.yahoo {
+	background-position: -51px 1px;
+	&:hover {
+		background-position: -51px 51px;
+	}
+}
+
+div.social-footer.yelp {
+	background-position: -101px 1px;
+	&:hover {
+		background-position: -101px 51px;
+	}
+}
+
+div.social-footer.bing {
+	background-position: -151px 1px;
+	&:hover {
+		background-position: -151px 51px;
+	}
+}
+
+div.social-footer.yellow {
+	background-position: -201px 1px;
+	&:hover {
+		background-position: -201px 51px;
+	}
+}
+
+div.social-footer.dex {
+	background-position: -251px 1px;
+	&:hover {
+		background-position: -251px 51px;
+	}
+}
+
+div.social-footer.bbb {
+	background-position: -301px 1px;
+	&:hover {
+		background-position: -301px 51px;
+	}
 }
