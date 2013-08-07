@@ -356,6 +356,9 @@ div.before-after {
 	width: emCalc(360);
 	text-align: center;
 	margin-bottom: 4.5em;
+	&:hover{
+		border: 3px solid $blue;
+	}
 }
 
 div.before-after.before {
@@ -462,6 +465,7 @@ div.social-footer {
 	width: 51px;
 	height: 51px;
 	background-image: image-url("social.png");
+	display: inline-block;
 }
 
 div.social-footer.google {
