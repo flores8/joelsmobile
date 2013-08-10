@@ -205,10 +205,10 @@ img.home-video {
 h3.section-heading {
 	text-transform: uppercase;
 	color: $textDarkBlue;
-	font-size: emCalc(24);
+	font-size: emCalc(33);
 	text-align: center;
-	margin: 5em 0 .5em 0;
-	font-weight: 400;
+	margin: 5em 0 .2em 0;
+	font-weight: 200;
 }
 
 h4.section-subheading {
@@ -536,4 +536,12 @@ div.social-footer.bbb {
 	&:hover {
 		background-position: -303px 51px;
 	}
+}
+
+div.three-em-spacer {
+	padding: 3em;
+}
+
+div.one-em-spacer {
+	padding: 1em;
 }

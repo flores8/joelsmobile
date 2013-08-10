@@ -11,6 +11,7 @@ div.article {
 	border-right: 6px solid $red;
 	padding: .75em;
 	margin-bottom: 2em;
+	position: relative;
 	&:hover {
 		background-color: darken($grayLight, 5%);
 	}
@@ -23,14 +24,40 @@ a.article-landing-title {
 	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 2.25em;
 	line-height: 1.25em;
+	font-weight: 200;
 }
 
 /* No Image Articles - 3 per row */
 div.article-small {
 	background-color: $grayLight;
+	padding: 1em 2em;
+	position: relative;
+	&:hover {
+		background-color: darken($grayLight, 5%);
+
+	}
 }
 
+a.article-landing-title-small {
+	color: $textDarkBlue;
+	font-size: 1.5em;
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 
+span.link {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: image-url('empty.gif');
+}
 
 
 
@@ -50,14 +77,6 @@ p.education-article {
 	line-height: 1.875em;
 	color: $textGray;
 	font-family: 'PT Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-
-div.end-of-article-spacer {
-	padding: 3em;
-}
-
-div.recommendation-spacer {
-	padding: 1em;
 }
 
 /* Call to Action */
