@@ -27,14 +27,79 @@
 		<h3 class="section-heading">Auto Detailing</h3>
 	</div>
 
-	<div class="row">
-		<div class="small-12 large-6 columns">
-			<div class="article">
-				<%= link_to image_tag("birds-paint.jpg"), "#", class: "article-landing-image" %>
-				<%= link_to "How birds could ruin the paint on your car.", "#", class: "article-landing-title" %>
-			</div>
-		</div>	
+	<div class="article-wrapper">
+		<!-- Top row of Articles --> 
+		<div class="row">
+			<!-- Top Left Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("birds-paint.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "How birds could ruin the paint on your car.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+
+			<!-- Top Right Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("remove-dirt.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "The good and bad ways to remove dirt from your car.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+		</div>
+
+
+		<!-- Bottom row of Articles --> 
+		<div class="row">
+			<!-- Bottom Left Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("why-wax.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "Why would you want to wax your car?", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+
+			<!-- Bottom Right Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("why-wash.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "How often should you wash your car and why.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+		</div>
 	</div>
+		
 </div> 
 
 
@@ -43,7 +108,7 @@
 	<div class="row">
 		<div class="small-6 large-4 columns">
 			<div class="article-small">
-				<%= link_to "How car washes may be ruining the paint on your vehicle.", "#", class: "article-landing-title-small" %>
+				<%= link_to "How car washes may be ruining the paint on your vehicle.", "learning/example-article", class: "article-landing-title-small" %>
 			</div>
 		</div>	
 	</div>

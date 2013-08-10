@@ -266,6 +266,13 @@ a.get-started {
 	}
 }
 
+a.get-started.blue {
+	@include button($blue, $white, .75em 4em);
+	&:hover {
+		background-color: darken($blue, 5%);
+	}
+}
+
 /* Reviews */
 div.review-wrapper {
 	margin-bottom: 6em;

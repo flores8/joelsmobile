@@ -1,10 +1,15 @@
 <div class="row">
 	<div class="small-12 columns">
+		<!-- Article Image --> 
 		<%= image_tag('education-header-img.png')%>
 	</div>
+
+	<!-- Article Title --> 
 	<div class="education-article-title">
 		<h1 class="education-article">5 Good Ways to Remove Dirt from Your Car</h1>
 	</div>
+
+	<!-- Article Body --> 
 	<div class="education-article-body">
 		<p class="education-article">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet placerat justo. Vivamus porttitor dolor eu scelerisque adipiscing. Quisque euismod sollicitudin semper. Aliquam a leo tristique, molestie mi nec, luctus augue. Aliquam elementum tortor vel lacus sollicitudin, non posuere libero dapibus. Integer tempor nisi vulputate lorem malesuada aliquet. Etiam condimentum rutrum ligula. 
@@ -21,5 +26,98 @@
 		<p class="education-article">
 			Sed et turpis in mauris hendrerit molestie. Duis sodales massa ac orci sodales eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies felis euismod elit sodales, sit amet lobortis nunc tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec laoreet, arcu ut tempus suscipit, dui quam venenatis urna, nec aliquet libero diam et eros. Phasellus vitae orci eget enim lacinia egestas non eu justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque sagittis accumsan sem, nec tempus purus semper vitae. Fusce rhoncus enim in arcu placerat, in rhoncus elit tincidunt. Duis congue pulvinar eros. Fusce id eleifend ante. 
 		</p>
+		<div class="end-of-article-spacer"></div>
 	</div>
 </div>
+
+<!-- Call to Action --> 
+<div class="gray">
+	<div class="get-started">
+		<span class="call-to-action">See how Joel's Mobile can help. </span><%= link_to "Contact Us", contact_path, class: "get-started blue" %>
+	</div>
+</div>
+
+
+<div class="recommendation-spacer"></div>
+
+
+<!-- Other Articles -->
+<div class="review-wrapper">
+	<div class="row">
+		<h3 class="section-heading">You May Also Enjoy</h3>
+	</div>
+
+	<div class="article-wrapper">
+		<!-- Top row of Articles --> 
+		<div class="row">
+			<!-- Top Left Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("birds-paint.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "How birds could ruin the paint on your car.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+
+			<!-- Top Right Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("remove-dirt.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "The good and bad ways to remove dirt from your car.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+		</div>
+
+
+		<!-- Bottom row of Articles --> 
+		<div class="row">
+			<!-- Bottom Left Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("why-wax.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "Why would you want to wax your car?", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+
+			<!-- Bottom Right Article -->
+			<div class="small-12 large-6 columns">
+				<%= link_to "learning/example-article" do %>
+					<div class="article">
+						<div class="row">
+							<div class="small-5 columns">
+								<%= link_to image_tag("why-wash.jpg"), "learning/example-article", class: "article-landing-image" %>
+							</div>
+							<div class="small-7 columns">
+								<%= link_to "How often should you wash your car and why.", "learning/example-article", class: "article-landing-title" %>
+							</div>
+						</div>					
+					</div>
+				<% end %>
+			</div>	
+		</div>
+	</div>
+		
+</div> 

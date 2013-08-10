@@ -1,22 +1,28 @@
 @import 'variables.css.scss';
 
-/* Auto Detailing Articles
+/* Landing Page - Auto Detailing Articles
 ================================================== */
-
+div.article-wrapper {
+	margin: 3em 0;
+}
 /* Big Articles - 2 per row */
 div.article {
 	background-color: $grayLight;
 	border-right: 6px solid $red;
 	padding: .75em;
+	margin-bottom: 2em;
+	&:hover {
+		background-color: darken($grayLight, 5%);
+	}
 }
 img.article-landing-image {
-
 }
 
 a.article-landing-title {
 	color: $textDarkBlue;
 	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 2.25em;
+	line-height: 1.25em;
 }
 
 /* No Image Articles - 3 per row */
@@ -25,7 +31,10 @@ div.article-small {
 }
 
 
-/* Articles
+
+
+
+/* Articles Page
 ================================================== */
 h1.education-article {
 	margin: 9.5em 0 0 .3em;
@@ -39,6 +48,22 @@ h1.education-article {
 p.education-article {
 	margin-left: .5em;
 	line-height: 1.875em;
-	color: $textDarkGray;
+	color: $textGray;
 	font-family: 'PT Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+div.end-of-article-spacer {
+	padding: 3em;
+}
+
+div.recommendation-spacer {
+	padding: 1em;
+}
+
+/* Call to Action */
+span.call-to-action {
+	color: $grayLightStroke;
+	font-size: 1.5em;
+	padding-right: 1.5em;
+	font-weight: 200;
 }
