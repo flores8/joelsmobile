@@ -23,3 +23,22 @@ a.article-landing-title {
 div.article-small {
 	background-color: $grayLight;
 }
+
+
+/* Articles
+================================================== */
+h1.education-article {
+	margin: 9.5em 0 0 .3em;
+	line-height: 2.5em;
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: 3em;
+	color: $textDarkGray;
+}
+
+p.education-article {
+	margin-left: .5em;
+	line-height: 1.875em;
+	color: $textDarkGray;
+	font-family: 'PT Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
