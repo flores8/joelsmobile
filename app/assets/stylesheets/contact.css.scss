@@ -1,0 +1,25 @@
+@import 'variables.css.scss';
+
+/* Call to Action - Green Strip
+================================================== */
+div.call-wrapper {
+	padding: 6em 0 2em 0;
+}
+
+p.green-dark {
+	color: $darkGreen;
+	text-align: center;
+	font-size: 1.875em;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+p.green-white {
+	text-align: center;
+	color: white;
+	font-size: 4em;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}

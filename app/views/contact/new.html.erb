@@ -1,0 +1,64 @@
+<!-- Intro Header Text --> 
+<div class="row">
+	<h1 class="auto-header">Get Started</h1>
+	<h2 class="auto-subtitle">It's so easy.  You'll be glad you did.</h2>
+</div>
+
+<!-- Green Get Started section --> 
+<div class="green">
+	<div class="row">
+		<div class="large-8 small-centered columns">
+			<div class="call-wrapper">
+				<p class="green-dark">Give Us A Call</p>
+				<p class="green-white">520-744-5635</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Contact Us Form --> 
+<%= form_for @message, :url => contact_path do |f| %>
+
+  <!-- Name --> 
+  <div class="form-box">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "text", type: "text" %>
+  </div>
+
+  <!-- Email --> 
+  <div class="form-box">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "text", type: "text" %>
+  </div>
+
+  <!-- Phone --> 
+  <div class="form-box last">
+    <%= f.label :phone %>
+    <%= f.text_field :phone, class: "text", type: "text" %>
+  </div>
+
+  <!-- Interested In --> 
+  <div class="form-box last">
+    <%= f.label :services %>
+    <%= f.text_field :services, class: "text", type: "text" %>
+  </div>
+
+  <!-- Vehicle --> 
+  <div class="form-box last">
+    <%= f.label :vehicle %>
+    <%= f.text_field :vehicle, class: "text", type: "text" %>
+  </div>
+
+  <!-- Message --> 
+  <div class="form-box big">
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <%= f.submit "Send Message", class: "button medium color" %>
+
+<% end %>
+

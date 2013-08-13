@@ -3,9 +3,11 @@ Joelsmobile::Application.routes.draw do
   get 'auto' => "pages#auto"
   get 'power' => "pages#power"
   get 'about' => "pages#about"
-  get 'contact' => "pages#contact"
+  #get 'contact' => "pages#contact"
   get 'learning' => "education#home"
   get 'learning/example-article' => "education#five-ways-remove-dirt"
+  match 'contact', to: 'contact#new', via: :get
+  match 'contact', to: 'contact#create', via: :post
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
