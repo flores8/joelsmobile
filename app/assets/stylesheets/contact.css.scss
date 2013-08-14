@@ -50,7 +50,7 @@ input.contact-form-small, select {
 }
 
 select#message_services {
-	@include border-radius(none);
+
 }
 
 textarea {
@@ -65,5 +65,8 @@ input.contact-form-submit {
 	font-size: 1.875em;
 	font-family: 'PT Sans Narrow', 'PT Sans' "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1.5em;
+	&:hover {
+		background-color: darken($red, 5%);
+	}
 }

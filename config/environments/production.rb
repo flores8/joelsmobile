@@ -77,4 +77,18 @@ Joelsmobile::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.mandrillapp.com",
+    :port                 => 587,
+    :domain               => "http://localhost:3000",
+    :user_name            => "joelsmobile1@gmail.com",
+    :password             => "QspFoKV0ZPBKvgO6-2j6Ww",
+    :authentication       => :plain,
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.default_url_options = {
+    :host => "http://localhost:3000"
+  }
 end

@@ -26,19 +26,4 @@ Joelsmobile::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.mandrillapp.com",
-    :port                 => 587,
-    :domain               => "http://localhost:3000",
-    :user_name            => "joelsmobile1@gmail.com",
-    :password             => "QspFoKV0ZPBKvgO6-2j6Ww",
-    :authentication       => :plain,
-    :enable_starttls_auto => true
-  }
-
-  config.action_mailer.default_url_options = {
-    :host => "http://localhost:3000"
-  }
-
 end
