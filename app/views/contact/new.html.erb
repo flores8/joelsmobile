@@ -18,69 +18,92 @@
 
 
 <!-- Contact Us Form --> 
-<div class="row">
-  <div class="contact-form">
-    <%= form_for @message, :url => contact_path do |f| %>
+<div class="contact-form-wrapper">
+  <div class="row">
+    <div class="contact-form">
+      <%= form_for @message, :url => contact_path do |f| %>
 
-      <div class="small-12 large-6 columns">
-        <!-- Name --> 
-        <div class="small-4 large-2 columns">
-          <%= f.label :name, class: "right inline", for: "right-label" %>
-        </div>
-        <div class="small-8 large-10 columns">
-          <%= f.text_field :name, class: "contact-form-small", type: "text", id: "right-label" %>
-        </div>
+        <div class="small-12 large-7 columns">
+          <!-- Name --> 
+          <div class="small-4 columns">
+            <%= f.label :name, class: "right inline", for: "right-label" %>
+          </div>
+          <div class="small-8 columns">
+            <%= f.text_field :name, class: "contact-form-small", type: "text", id: "right-label" %>
+          </div>
+            
+
+          <!-- Email --> 
+          <div class="small-4 columns">
+            <%= f.label :email, class: "right inline", for: "right-label" %>
+          </div>
+          <div class="small-8 columns">
+            <%= f.text_field :email, class: "contact-form-small", type: "text", id: "right-label" %>
+          </div>
+
+          <!-- Phone --> 
+          <div class="small-4 columns">
+            <%= f.label :phone, class: "right inline", for: "right-label" %>
+          </div>
+          <div class="small-8 columns">
+            <%= f.text_field :phone, class: "contact-form-small", type: "text", id: "right-label" %>
+          </div>
+
+          <!-- Vehicle --> 
+          <div class="small-4 columns">
+            <%= f.label :vehicle, class: "right inline", for: "right-label" %>
+          </div>
+          <div class="small-8 columns">
+            <%= f.text_field :vehicle, class: "contact-form-small", type: "text", id: "right-label" %>
+          </div>
+
+
+          <!-- Interested In --> 
+          <div class="small-4 columns">
+            <%= f.label :services, class: "right inline", for: "right-label" %>
+          </div>
+          <div class="small-8 columns">
+            <%= f.select :services, [['Auto Detail','auto detail'],['Power Wash','power wash'],['Both','both']], class: "contact-form-small dropdown", id: "right-label" %>
+          </div>
+
           
 
-        <!-- Email --> 
-        <div class="small-4 large-2 columns">
-          <%= f.label :email, class: "right inline", for: "right-label" %>
-        </div>
-        <div class="small-8 large-10 columns">
-          <%= f.text_field :email, class: "contact-form-small", type: "text", id: "right-label" %>
         </div>
 
-        <!-- Phone --> 
-        <div class="small-4 large-2 columns">
-          <%= f.label :phone, class: "right inline", for: "right-label" %>
-        </div>
-        <div class="small-8 large-10 columns">
-          <%= f.text_field :phone, class: "contact-form-small", type: "text", id: "right-label" %>
-        </div>
-
-        <!-- Interested In --> 
-        <div class="small-4 large-2 columns">
-          <%= f.label :services, class: "right inline", for: "right-label" %>
-        </div>
-        <div class="small-8 large-10 columns">
-          <%= f.select :services, [['Auto Detail','auto detail'],['Power Wash','power wash'],['Both','both']], class: "contact-form-small dropdown", id: "right-label" %>
+        <div class="small-12 large-5 columns">
+          <!-- Message --> 
+          <div class="form-box big">
+            <%= f.text_area :message, placeholder: "Please share any concerns, interests, or special requests." %>
+          </div>
         </div>
 
-        <!-- Vehicle --> 
-        <div class="small-4 large-2 columns">
-          <%= f.label :vehicle, class: "right inline", for: "right-label" %>
+        <div class="row">
+          <div class="small-4 small-centered columns">
+            <%= f.submit "Submit", class: "contact-form-submit" %>
+          </div>
         </div>
-        <div class="small-8 large-10 columns">
-          <%= f.text_field :vehicle, class: "contact-form-small", type: "text", id: "right-label" %>
-        </div>
-
-      </div>
-
-      <div class="small-12 large-6 columns">
-        <!-- Message --> 
-        <div class="form-box big">
-          <%= f.text_area :message, placeholder: "Please share any concerns, interests, or special requests." %>
-        </div>
-      </div>
-
-      <div class="small-6 centered columns">
-        <%= f.submit "Submit", class: "contact-form-submit" %>
-      </div>
-
-        
-
-    <% end %>
+          
+      <% end %>
+    </div>
   </div>
 </div>
-  
+
+
+<div class="one-em-spacer"></div>
+
+
+<!-- Other Purchasing Options --> 
+<div class="row">
+  <div class="large-6 columns">
+      <div class="empty-button">
+        <%= link_to "Pay Online", "#", class: "empty-button" %>
+      </div>  
+    </div>
+    <div class="large-6 columns">
+      <div class="empty-button">
+        <%= link_to "Buy a Gift Card", "#", class: "empty-button" %>
+      </div>
+    </div>
+  </div>
+</div>
 
