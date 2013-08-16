@@ -33,7 +33,7 @@ div.contact-form {
 	padding: 6em 0;
 }
 
-label.right.inline {
+label.right.inline, p.contact-form {
 	color: $darkGray;
 	text-transform: uppercase;
 	font-size: 1.2em;
@@ -56,6 +56,8 @@ select#message_services {
 textarea {
 	height: 26em;
 	@include border-radius(2px);
+	color: $darkGray;
+	font-size: 1em;
 }
 
 input.contact-form-submit {
@@ -70,3 +72,9 @@ input.contact-form-submit {
 		background-color: darken($red, 5%);
 	}
 }
+
+/* Checkboxes */
+label {
+}
+
+

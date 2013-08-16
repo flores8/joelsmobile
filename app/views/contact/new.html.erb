@@ -60,10 +60,25 @@
 
           <!-- Interested In --> 
           <div class="small-4 columns">
-            <%= f.label :services, class: "right inline", for: "right-label" %>
+            <p class="contact-form">Interested In</p>
           </div>
           <div class="small-8 columns">
-            <%= f.select :services, [['Auto Detail'],['Power Wash'],['Both']] %>
+            <div class="checkbox">
+              <div class="row">
+                <div class="small-6 columns">
+                  <%= f.check_box :auto, class: "checkbox-contact-form" %>
+                  <%= f.label :auto, "Auto Detailing", class: "checkbox-contact-form" %>
+                </div>
+                <div class="small-6 columns">
+                  <%= f.check_box :power, class: "checkbox-contact-form" %>
+                  <%= f.label :power, "Power Washing", class: "checkbox-contact-form" %>
+                </div>
+              </div>
+
+
+                
+
+            </div>
           </div>
 
           
@@ -87,7 +102,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="one-em-spacer"></div>
 
